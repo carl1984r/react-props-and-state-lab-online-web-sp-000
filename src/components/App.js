@@ -41,7 +41,7 @@ class App extends React.Component {
           pets: json
         })
       })
-    }    
+    }
 
     onAdoptPet = petId => {
       const pets = this.state.pets.map(p => {
