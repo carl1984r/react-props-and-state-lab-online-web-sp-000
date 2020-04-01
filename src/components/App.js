@@ -23,7 +23,7 @@ class App extends React.Component {
         }
       })
     }
-  
+
     onFindPetsClick = () => {
       const searchQuery = this.state.filters.type;
       let url = '/api/pets';
@@ -42,26 +42,26 @@ class App extends React.Component {
         })
       })
     }
-  
+
     // onFindPetsClick = () => {
     //   let endpoint = '/api/pets';
-  
+
     //   if (this.state.filters.type !== 'all') {
     //     endpoint += `?type=${this.state.filters.type}`;
     //   }
-  
+
     //   fetch(endpoint)
     //     .then(res => res.json())
     //     .then(pets => this.setState({ pets: pets }));
     // };
-  
+
     onAdoptPet = petId => {
       const pets = this.state.pets.map(p => {
         return p.id === petId ? { ...p, isAdopted: true } : p;
       });
       this.setState({ pets: pets });
     };
-    
+
   render() {
     return (
       <div className="ui container">
