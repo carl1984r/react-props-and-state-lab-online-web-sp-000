@@ -5,7 +5,7 @@ class Filters extends React.Component {
   onSelectType = (event) => {
     this.props.onChangeType(event.target.value)
   }
-  
+
   render() {
     return (
       <div className="ui form">
