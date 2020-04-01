@@ -2,7 +2,7 @@ import React from 'react'
 
 class Pet extends React.Component {
 
-  adoptPet = (e) => {
+  adoptPet = (d) => {
     this.props.onAdoptPet(this.props.id)
   }
 
