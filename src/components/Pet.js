@@ -5,7 +5,7 @@ class Pet extends React.Component {
   adoptPet = (d) => {
     this.props.onAdoptPet(this.props.id)
   }
-  
+
   render() {
     return (
       <div className="card">
